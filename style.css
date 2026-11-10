@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f8f7ef;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #202820;
+}
+
+/* Navbar */
+
+.hotel-navbar,
+.hotel-footer {
+    background: #17351f;
+}
+
+.hotel-navbar {
+    min-height: 76px;
+}
+
+.navbar-brand {
+    color: white;
+    line-height: 1.05;
+}
+
+.navbar-brand strong {
+    font-size: 25px;
+}
+
+.navbar-brand small {
+    color: #c8d4b4;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.brand-icon {
+    color: #8ca96b;
+    font-size: 46px;
+}
+
+.navbar-nav .nav-link {
+    color: #f5f5ed;
+    margin: 0 13px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #c3d3a8;
+}
+
+/* Buttons */
+
+.book-top,
+.discover-btn {
+    color: white;
+    background: #6e8d4e;
+    border: 0;
+    border-radius: 30px;
+    padding: 11px 25px;
+}
+
+.book-top:hover,
+.discover-btn:hover {
+    color: white;
+    background: #55743b;
+}
+
+/* Carousel */
+
+.hero-img {
+    height: 360px;
+    object-fit: cover;
+    filter: brightness(.78);
+}
+
+.hero-shade {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(10, 28, 13, .65),
+        transparent 70%
+    );
+}
+
+.hero-caption {
+    left: 7%;
+    right: auto;
+    bottom: 45px;
+    z-index: 2;
+}
+
+.hero-caption h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.02;
+}
+
+.hero-caption p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 12px 0 18px;
+}
+
+.carousel-indicators {
+    z-index: 3;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+
+/* Rooms */
+
+.rooms-section {
+    background: #fbfaf4;
+    padding: 25px 0;
+}
+
+.room-card {
+    border: 0;
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .12);
+    background: white;
+}
+
+.room-card .card-img-top {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.room-card .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 11px;
+}
+
+.room-card .card-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.room-card .card-text {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.35;
+    min-height: 33px;
+    margin-bottom: 7px;
+}
+
+.price {
+    color: #28552c;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.price span {
+    color: #6c7568;
+    font-weight: normal;
+}
+
+.room-btn {
+    margin-top: auto;
+    color: white;
+    background: #28552c;
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.room-btn:hover {
+    color: white;
+    background: #17351f;
+}
+
+/* About */
+
+.about-section {
+    background: #eef1e5;
+    padding: 35px 15px;
+}
+
+.about-section h2 {
+    color: #214629;
+    font-weight: bold;
+}
+
+.about-section p {
+    max-width: 650px;
+    margin: 10px auto 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer */
+
+.hotel-footer {
+    color: #f5f5ed;
+    padding: 28px 0 15px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.footer-brand {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-small {
+    color: #c8d4b4;
+    letter-spacing: 2px;
+    margin: -3px 0 10px 40px;
+}
+
+.hotel-footer h5 {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.hotel-footer a {
+    display: block;
+    width: fit-content;
+    color: #f5f5ed;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.hotel-footer a:hover {
+    color: #c3d3a8;
+}
+
+.hotel-footer p {
+    margin-bottom: 7px;
+}
+
+.social-links {
+    display: flex;
+    gap: 9px;
+}
+
+.social-links a {
+    width: 27px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #829b69;
+    color: #17351f;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.hotel-footer hr {
+    border-color: #a5b48f;
+    margin: 20px 0 12px;
+}
+
+.copyright {
+    text-align: center;
+    margin: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+
+    .hero-img {
+        height: 300px;
+    }
+
+    .hero-caption {
+        bottom: 35px;
+        left: 10%;
+    }
+
+    .hero-caption h1 {
+        font-size: 32px;
+    }
+
+    .hero-caption p {
+        font-size: 14px;
+    }
+
+    .room-card .card-img-top {
+        height: 180px;
+    }
+
+}
